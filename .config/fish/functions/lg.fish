@@ -1,7 +1,4 @@
-function lg --wraps=lazygit --description 'alias lg=lazygit'
-    if type -f eza &>/dev/null
-        lazygit $argv
-    else
-        missing_package lazygit
-    end
+function lg --wraps='eza $EZA_STANDARD_OPTIONS $EZA_LG_OPTIONS' --description 'alias lg eza $EZA_STANDARD_OPTIONS $EZA_LG_OPTIONS'
+  eza $EZA_STANDARD_OPTIONS $EZA_LG_OPTIONS $argv
+        
 end

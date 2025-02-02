@@ -1,5 +1,5 @@
 function fish_greeting
-    if type -q colorscript
-        colorscript random
-    end
+    set_color white
+
+    fastfetch
 end

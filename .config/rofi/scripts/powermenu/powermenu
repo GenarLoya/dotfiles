@@ -12,8 +12,6 @@ no='󱎘'
 
 rofi_cmd() {
   rofi -dmenu \
-    -p "Uptime: $uptime" \
-    -mesg "Uptime: $uptime" \
     -theme ~/.config/rofi/scripts/powermenu/style.rasi
 }
 

@@ -27,18 +27,17 @@
       "sideBar.border": "base"
     }
   },
-
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "scm.inputFontFamily": "JetBrainsMono Nerd Font",
-  "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
-  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
-  "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
-  "markdown.preview.fontFamily": "JetBrainsMono Nerd Font",
-  "errorLens.fontFamily": "JetBrainsMono Nerd Font",
+  // "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
+  // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  // "scm.inputFontFamily": "JetBrainsMono Nerd Font",
+  // "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
+  // "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  // "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
+  // "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
+  // "markdown.preview.fontFamily": "JetBrainsMono Nerd Font",
+  // "errorLens.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
@@ -111,12 +110,16 @@
     "itemMargin": 5
   },
   "apc.listRow": {
-    "lists": ["explorer-folders-view", "quick-input-list", "results"],
+    "lists": [
+      "explorer-folders-view",
+      "quick-input-list",
+      "results"
+    ],
     "height": 26,
     "fontSize": 12
   },
-  "apc.font.family": "JetBrainsMono Nerd Font",
-  "apc.monospace.font.family": "JetBrainsMono Nerd Font",
+  // "apc.font.family": "JetBrainsMono Nerd Font",
+  // "apc.monospace.font.family": "JetBrainsMono Nerd Font",
   "apc.statusBar": {
     "position": "editor-bottom",
     "height": 28,
@@ -148,15 +151,15 @@
     ".monaco-list-row:hover": "background: rgba(0, 0, 0, .2) !important;",
     ".notifications-toasts .monaco-list-row:hover": "background: none !important;"
   },
-
   // Neovim
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "vscode-neovim.neovimExecutablePaths.linux": "/home/matt/.local/share/bob/nvim-bin/nvim",
-
   // Project Manager
-  "projectManager.git.baseFolders": ["~/dev/"],
+  "projectManager.git.baseFolders": [
+    "~/dev/"
+  ],
   "projectManager.sortList": "Recent",
   // Smooth movement
   "workbench.list.smoothScrolling": true,
@@ -363,7 +366,6 @@
       "isBold": true,
       "styleMode": "full"
     },
-
     // FIX Anchors
     "FIXME": {
       "iconColor": "#ed8796",
@@ -401,7 +403,6 @@
       "isItalic": true,
       "styleMode": "full"
     },
-
     // NOTE Anchors
     "INFO": {
       "iconColor": "#8bd5ca",
@@ -418,7 +419,6 @@
       "isBold": true,
       "styleMode": "full"
     },
-
     // Other Anchors
     "HACK": {
       "iconColor": "#eed49f",
@@ -427,7 +427,6 @@
       "isItalic": true,
       "styleMode": "full"
     },
-
     // Warning Anchors
     "XXX": {
       "iconColor": "#eed49f",
@@ -451,7 +450,6 @@
       "isBold": true,
       "styleMode": "full"
     },
-
     // Performance Anchors
     "OPTIM": {
       "iconColor": "#f0c6c6",
@@ -482,7 +480,6 @@
       "isBold": true,
       "styleMode": "full"
     },
-
     // Testing Anchors
     "PASSED": {
       "iconColor": "#f0c6c6",
@@ -520,7 +517,6 @@
       "isItalic": true,
       "styleMode": "full"
     },
-
     // Dividing Anchors
     "SECTION": {
       "iconColor": "#f5bde6",

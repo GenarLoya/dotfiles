@@ -1,7 +1,4 @@
-function ld --wraps=lazydocker --description 'alias ld=lazydocker'
-    if type -f lazydocker &>/dev/null
-        lazydocker $argv
-    else
-        missing_package lazydocker
-    end
+function ld --wraps='eza $EZA_STANDARD_OPTIONS $EZA_LD_OPTIONS $EZA_L_OPTIONS' --description 'alias ld eza $EZA_STANDARD_OPTIONS $EZA_LD_OPTIONS $EZA_L_OPTIONS'
+  eza $EZA_STANDARD_OPTIONS $EZA_LD_OPTIONS $EZA_L_OPTIONS $argv
+        
 end

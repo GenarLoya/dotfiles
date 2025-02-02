@@ -1,7 +1,4 @@
-function l --wraps='eza --long --header -a --icons --git --group-directories-first' --description 'alias l=eza --long --header -a --icons --git --group-directories-first'
-    if type -f eza &>/dev/null
-        eza --long --header -a --icons --git --group-directories-first --hyperlink $argv
-    else
-        missing_package eza
-    end
+function l --wraps='eza $EZA_STANDARD_OPTIONS $EZA_L_OPTIONS' --description 'alias l eza $EZA_STANDARD_OPTIONS $EZA_L_OPTIONS'
+  eza $EZA_STANDARD_OPTIONS $EZA_L_OPTIONS $argv
+        
 end

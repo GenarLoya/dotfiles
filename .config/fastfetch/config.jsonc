@@ -4,7 +4,7 @@
     "source": "~/.config/fastfetch/emboar.png",
     "height": 7,
     "padding": {
-      "top": 4
+      "top": 2
     }
   },
   "display": {

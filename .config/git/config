@@ -10,7 +10,7 @@
 [user]
   name = Sergio Laín
   email = sergio.lac@pm.me
-  signingKey = 51BB28D8B42FB438
+	signingkey = 71D4A2D40E0C6572
 
 [safe]
   directory = ~/dev
@@ -56,10 +56,10 @@
   rebase = false
 
 [commit]
-  gpgsign = true
+	gpgsign = true
 
 [gpg]
-  program = /sbin/gpg
+	program = gpg2
 
 [alias]
   aliases = config --get-regexp alias

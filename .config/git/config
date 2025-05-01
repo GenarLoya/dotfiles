@@ -8,8 +8,8 @@
   path = ~/.config/git/config-class
 
 [user]
-  name = Sergio Laín
-  email = sergio.lac@pm.me
+	name = genarLoya
+	email = genarodour2104@gmail.com
 	signingkey = 71D4A2D40E0C6572
 
 [safe]

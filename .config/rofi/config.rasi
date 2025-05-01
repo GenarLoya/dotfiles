@@ -69,7 +69,7 @@ configuration {
   display-windowcd: "Window CD";
   display-run: "Run";
   display-ssh: "SSH";
-  display-drun: "Apps";
+  //display-drun: "Apps";
   display-combi: "Combi";
   display-keys: "Keys";
   display-filebrowser: "Files";

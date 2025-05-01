@@ -28,9 +28,9 @@ local catppuccin_palette = {
 }
 
 -- Plugins
-require("full-border"):setup({
-	type = ui.Border.ROUNDED,
-})
+-- require("full-border"):setup({
+--	type = ui.Border.ROUNDED,
+-- })
 
 require("zoxide"):setup({
 	update_db = true,
@@ -56,9 +56,9 @@ require("searchjump"):setup({
 })
 
 require("yatline"):setup({
-	section_separator = { open = "", close = "" },
-	inverse_separator = { open = "", close = "" },
-	part_separator = { open = "", close = "" },
+--	section_separator = { open = "", close = "" },
+--	inverse_separator = { open = "", close = "" },
+--	part_separator = { open = "", close = "" },
 
 	style_a = {
 		fg = catppuccin_palette.mantle,
@@ -187,3 +187,7 @@ require("yatline-githead"):setup({
 })
 
 require("git"):setup()
+
+require("fg"):setup({
+	default_action = "jump",
+})

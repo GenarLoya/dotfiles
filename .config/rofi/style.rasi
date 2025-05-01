@@ -18,7 +18,7 @@ window {
   anchor:                      center;
   fullscreen:                  false;
   border:                      2px;
-  border-radius:               10px;
+  border-radius:               5px;
   border-color:                @accent;
   width:                       500px;
   x-offset:                    0px;
@@ -26,7 +26,6 @@ window {
   enabled:                     true;
   margin:                      0px;
   padding:                     0px;
-  border-radius:               10px;
   cursor:                      "default";
   transparency:                "real";
   background-color:            @background;
@@ -36,7 +35,7 @@ window {
 mainbox {
   enabled:                     true;
   spacing:                     15px;
-  padding:                     30px;
+  padding:                     20px;
   background-color:            transparent;
   children:                    [ "inputbar", "mode-switcher", "listview" ];
 }
@@ -44,7 +43,7 @@ mainbox {
 // Inputbar
 inputbar {
   enabled:                     true;
-  spacing:                     15px;
+  spacing:                     0px;
   margin:                      0px;
   background-color:            transparent;
   children:                    [ "textbox-prompt-colon", "entry" ];
@@ -57,7 +56,7 @@ textbox-prompt-colon {
   border:                      0px;
   border-radius:               7px;
   border-color:                @border-tb;
-  background-color:            @background-tb;
+  background-color:            transparent;
   text-color:                  @foreground;
   str:                         " ";
 }
@@ -68,7 +67,7 @@ entry {
   border:                      0px;
   border-radius:               7px;
   border-color:                @border-tb;
-  background-color:            @background-tb;
+  background-color:            transparent;
   text-color:                  @foreground;
   cursor:                      text;
   placeholder:                 "Search...";
@@ -139,7 +138,7 @@ element-text {
 
 // Mode Switcher
 mode-switcher {
-  enabled:                     true;
+  enabled:                     false;
   expand:                      false;
   spacing:                     15px;
   background-color:            transparent;

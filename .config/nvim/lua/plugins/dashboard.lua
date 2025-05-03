@@ -4,10 +4,8 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("dashboard").setup({
-			theme = "doom",
 			config = {
 				header = {
-					"                                                                 ",
 					"                                                                 ",
 					"    ,gg,                       ,gggggggg,                        ",
 					"   i8::8i                     d8P::::::Y8b,                      ",

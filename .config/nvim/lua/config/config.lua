@@ -22,3 +22,5 @@ vim.o.inccommand = "split" -- When nonempty, shows the effects of :substitute, :
 vim.o.splitright = true
 vim.o.splitbelow = true -- When on, splitting a window will put the new window below the current one
 vim.o.termguicolors = true
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

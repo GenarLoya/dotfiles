@@ -1,9 +1,10 @@
 return {
-	"glepnir/dashboard-nvim",
+	"nvimdev/dashboard-nvim",
 	event = "VimEnter",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("dashboard").setup({
+			theme = "doom",
 			config = {
 				header = {
 					"                                                                 ",
@@ -33,21 +34,6 @@ return {
 				},
 				footer = { " Happy coding!" },
 			},
-		})
-
-		vim.api.nvim_create_autocmd("VimEnter", {
-			callback = function()
-				-- Si no se pasaron archivos como argumento (por ejemplo, con `nvim` o `nvim .`)
-				if vim.fn.argc() == 0 then
-					-- Esto limpia los buffers que abre al usar `nvim .` para evitar que se muestren
-					for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-						if vim.api.nvim_buf_is_loaded(buf) and vim.api.nvim_buf_get_option(buf, "buftype") == "" then
-							vim.api.nvim_buf_delete(buf, { force = true })
-						end
-					end
-					require("dashboard"):instance()
-				end
-			end,
 		})
 	end,
 }

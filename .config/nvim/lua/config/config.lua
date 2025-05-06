@@ -24,3 +24,10 @@ vim.o.splitbelow = true -- When on, splitting a window will put the new window b
 vim.o.termguicolors = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- Http
+vim.filetype.add({
+	extension = {
+		["http"] = "http",
+	},
+})

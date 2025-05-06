@@ -19,8 +19,8 @@ map("n", "<leader>q", "<CMD>q<CR>")
 map("i", "jk", "<ESC>")
 
 -- NeoTree
-map("n", "<leader>e", "<CMD>NvimTreeToggle<CR>")
-map("n", "<leader>r", "<CMD>NvimTreeRefresh<CR>")
+-- map("n", "<leader>e", "<CMD>NvimTreeToggle<CR>")
+-- map("n", "<leader>r", "<CMD>NvimTreeRefresh<CR>")
 
 -- New Windows
 map("n", "<leader>o", "<CMD>vsplit<CR>")
@@ -42,7 +42,6 @@ map("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", { desc = "Find refer
 map("n", "<leader>fd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Find definitions" })
 map("n", "<leader>fi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Find implementations" })
 map("n", "<leader>ft", "<cmd>Telescope lsp_type_definitions<cr>", { desc = "Find type definitions" })
-map("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Find diagnostics" })
 map("n", "<leader>ft", "<cmd>Telescope tags<cr>", { desc = "Find todos" })
 map("n", "<leader>fc", "<cmd>Telescope git commits<cr>", { desc = "Find todos" })
 map("n", "<space>fs", function()

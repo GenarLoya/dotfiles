@@ -69,6 +69,12 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["kulala-ls"] = function()
+				nvim_lsp["kulala-ls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
 		})
 	end,
 }

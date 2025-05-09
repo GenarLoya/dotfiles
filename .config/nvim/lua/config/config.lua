@@ -24,10 +24,24 @@ vim.o.splitbelow = true -- When on, splitting a window will put the new window b
 vim.o.termguicolors = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
 -- Http
 vim.filetype.add({
 	extension = {
 		["http"] = "http",
 	},
+})
+
+-- Autosave on focus lost
+local function autosave_and_format()
+	if vim.bo.modified and vim.bo.modifiable and vim.bo.buftype == "" then
+		local fidget = require("fidget")
+		require("conform").format({ async = false }) -- Espera al formateo
+		vim.cmd("silent! wall") -- Guarda todos los buffers modificados
+		fidget.notify(" ✓ ", vim.log.levels.INFO, { annote = "Autosaved..." })
+	end
+end
+
+vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave" }, {
+	pattern = "*",
+	callback = autosave_and_format,
 })
